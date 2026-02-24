@@ -1,201 +1,229 @@
 <!DOCTYPE html>
+
 <head>
-<meta charset="UTF8">
-<title>Leal</title>
+    <meta charset="UTF8">
+    <title>Leal</title>
 </head>
-<body> 
-<style>
-*{
-padding:0;
-margin:0;
-box-sizing: border-box;
-scroll-behavior: smooth;
-}
-body{
-margin:20px;
-padding:20px;
-background: linear-gradient(180deg, #000, #0000ff, #000);
-background-size:100% 100%;
-color:#000;
 
-}
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
+        body {
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(180deg, #000, #0000ff, #000);
+            background-size: 100% 100%;
+            color: #000;
 
-.navlinks{
-display:flex;
-justify-content:space-between;
-align-items: center;
-transition:0.3s ease;
-}
-
-.navlinks {
-
-}
-
-.img-perfil{
-border-radius:60%;
-border:1px solid gold;
-width:300px;
-height:400px;
-}
-.perfil{
-display: flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-}
-.perfil h3::after{
-content:"Desenvolvedor Web";
-animation: dev 6s infinite;
-color:#fff;
-}
-@keyframes dev{
-0%, 49%{content:"Desenvolvedor Web";
-background: linear-gradient(180deg, #000, #0000ff, #000)
-}
-50%, 100%{content:"Front-End";
-background: linear-gradient(180deg, #000, #0000ff, #000)
-}
-}
-
-.sobre{
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items: center;
-margin:30px 5px 40px;
-padding:15px;
-}
-
-#skills{
-border:1px solid gold;
-padding:20px;
-display:flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-
-}
-
-.caixa-skill{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:10px;
-}
-.skill{
-background: rgba(0, 0, 0,0.2);
-display:flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-margin:15px;
-padding:10px;
-transition:0.5s ease;
-}
-
-.skill:hover{
-background: rgba(0, 0, 0,0.7);
-display:flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-margin:15px;
-padding:10px;
-box-shadow:0px 5px 5px 10px rgba(255, 255, 255,0.2);
-transform: scale(1.1);
-cursor:pointer;
-border-radius:10px;
-color: #fff;
-}
-
-#projectos{
-display:flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-margin:15px;
-
-}
-.caixa-projecto{
-margin: 20px;
-display:flex;
-justify-content:center;
-align-items:center;
-}
+        }
 
 
-.proj{
-padding:100px;
-background: rgba(0, 0, 0,0.2);
-box-shadow:0px 5px 5px 10px rgba(255, 255, 255,0.7);
-}
-</style>
-<main>
+        .navlinks {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.3s ease;
+        }
 
-<nav>
-<ul class="navlinks">
-<li><a href="#">Sobre Mim</a></li>
-<li><a href="#">Competencias Tecnicas</a></li>
-<li><a href="#">Projectos</a></li>
-<li><a href="#">Valores</a></li>
-<li><a href="#">Contactos</a></li>
-</ul>
-</nav>
+        nav ul li,
+        a {
+            list-style-type: none;
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .img-perfil {
+            border-radius: 50%;
+            border: 1px solid #000;
+            width: 300px;
+            height: 400px;
+            margin: 30px;
+        }
+
+        .perfil {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .perfil h3::after {
+            content: "Desenvolvedor Web";
+            animation: dev 6s infinite;
+            color: #fff;
+        }
+
+        @keyframes dev {
+
+            0%,
+            49% {
+                content: "Desenvolvedor Web";
+                background: linear-gradient(180deg, #000, #0000ff, #000)
+            }
+
+            50%,
+            100% {
+                content: "Front-End";
+                background: linear-gradient(180deg, #000, #0000ff, #000)
+            }
+        }
+
+        .sobre {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 5px 40px;
+            padding: 15px;
+        }
+
+        #skills {
+            border: 1px solid gold;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .caixa-skill {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill {
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+            padding: 10px;
+            transition: 0.5s ease;
+        }
+
+        .skill:hover {
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+            padding: 10px;
+            box-shadow: 0px 5px 5px 10px rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+            cursor: pointer;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        #projectos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+
+        }
+
+        .caixa-projecto {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
 
-<section id="inicio">
-<div class="perfil">
-<img src="./img/leal.png" alt="" class="img-perfil">
-<h1>Elcinio Leal</h1>
-<h3></h3>
-</div>
-<div class="sobre">
-<h2>Sobre Mim</h2>
-<p>Apaixonado por design e tecnogias, atuo como desenvolvedor front-end, transformando designs em interfaces modernas, acessíveis e funcionais.<br>
-Desenvolvendo aplicações web responsivas utilizando HTML, CSS e JavaScript, com foco em performance,  organização de codigo e boas práticas.<br> Meu objectivo é criar experiências digitais que combinam estética, usabilidade e eficiência, garantindo que cada projecto seja confiável, escalável e otimizado.
-</p>
-</div>
+        .proj {
+            padding: 100px;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 5px 5px 10px rgba(255, 255, 255, 0.7);
+        }
+    </style>
+    <main>
 
-</section>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#">Competencias Tecnicas</a></li>
+                <li><a href="#">Projectos</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
 
 
-<section id="skills">
-<h2>Competências Técnicas</h2>
-<div class="caixa-skill">
-<div class="skill">
-<h3>HTML</h3>
-<p>Tenho experiência em estruturar páginas web de forma organizada, clara e acessível, garantindo boa legibilidade e integração eficiente com estilos e interatividade.</p>
-</div>
+        <section id="inicio">
+            <div class="perfil">
+                <img src="./img/leal.png" alt="" class="img-perfil">
+                <h1>Elcinio Leal</h1>
+                <h3></h3>
+            </div>
+            <div class="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Apaixonado por design e tecnogias, atuo como desenvolvedor front-end, transformando designs em
+                    interfaces modernas, acessíveis e funcionais.<br>
+                    Desenvolvendo aplicações web responsivas utilizando HTML, CSS e JavaScript, com foco em performance,
+                    organização de codigo e boas práticas.<br> Meu objectivo é criar experiências digitais que combinam
+                    estética, usabilidade e eficiência, garantindo que cada projecto seja confiável, escalável e
+                    otimizado.
+                </p>
+            </div>
 
-<div class="skill">
-<h3>CSS</h3>
-<p>Aplico o meu conhecimento de CSS para criar layouts responsivos e esteticamente consistentes, com atenção a design visual, responsividade e animações que melhoram a experiencia do usuário de forma funcional.</p>
-</div>
+        </section>
 
-<div class="skill">
-<h3>JAVASCRIPT</h3>
-<p>Possuo conhecimentos iniciais de JavaScript, capazes de adicionar interatividade simples e dinâmicas das paginas, manipulando comportamentos e respostas do usuario de forma funcional.</p>
-</div>
-</div>
-</section>
-<section id="projectos">
-<h2>Projectos</h2>
-<div class="caixa-projecto">
-<div class="proj"></div>
-<div class="proj"></div>
-<div class="proj"></div>
-</div>
-</section>
-<section id="contactos">
-<h2>Contactos</h2>
-<textarea></textarea>
-</section>
-<section id="footer">
 
-</section>
-</div>
-</main>
+        <section id="skills">
+            <h2>Competências Técnicas</h2>
+            <div class="caixa-skill">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <p>Tenho experiência em estruturar páginas web de forma organizada, clara e acessível, garantindo
+                        boa legibilidade e integração eficiente com estilos e interatividade.</p>
+                </div>
+
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <p>Aplico o meu conhecimento de CSS para criar layouts responsivos e esteticamente consistentes, com
+                        atenção a design visual, responsividade e animações que melhoram a experiencia do usuário de
+                        forma funcional.</p>
+                </div>
+
+                <div class="skill">
+                    <h3>JAVASCRIPT</h3>
+                    <p>Possuo conhecimentos iniciais de JavaScript, capazes de adicionar interatividade simples e
+                        dinâmicas das paginas, manipulando comportamentos e respostas do usuario de forma funcional.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projectos">
+            <h2>Projectos</h2>
+            <div class="caixa-projecto">
+                <div class="proj"></div>
+                <div class="proj"></div>
+                <div class="proj"></div>
+            </div>
+        </section>
+        <section id="contactos">
+            <h2>Contactos</h2>
+            <textarea></textarea>
+        </section>
+        <section id="footer">
+
+        </section>
+        </div>
+    </main>
 
 
 </body>
